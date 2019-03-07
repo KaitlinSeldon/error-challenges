@@ -8,16 +8,15 @@ var people = [
     { name: "John", age: 55 },
     { name: "Roger", age: 44 },
     { name: "Betty", age: 37 }
-    ]
+    ];
 
 var nameFilter = function(name) {
-    let name = "Eric"
     for (let i = 0; i < people.length; i++) {
-        let name = people[i].name
-        if (name != filteredName) {
-            console.log("My Name is " + name)
+        let names = people[i].name;
+        if (names != name) {
+            console.log("My Name is " + names);
         }
     }
-}
+};
 
-nameFilter("Roger")
+nameFilter("Roger");
