@@ -6,6 +6,8 @@ var people = [
     { name: "Betty", age: 37 }
     ]
 
+var currentName = "Betty"
+
 var nameFilter = function(filteredName) {
     var results = []
     for (var i = 0; i < people.length; i++) {
@@ -20,5 +22,5 @@ var selectName = function() {
     var currentName = "Betty";
     return currentName
 }
-var filteredNames = nameFilter(currentName)
-console.log(filteredNames)
+var filteredName = nameFilter(currentName)
+console.log(filteredName)
